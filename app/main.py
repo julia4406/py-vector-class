@@ -4,9 +4,9 @@ from math import sqrt, cos, acos, degrees, sin, radians
 
 
 class Vector:
-    def __init__(self, x: float, y: float) -> None:
-        self.x = round(x, 2)
-        self.y = round(y, 2)
+    def __init__(self, some_x: float, some_y: float) -> None:
+        self.x = round(some_x, 2)
+        self.y = round(some_y, 2)
 
     def __add__(self, other: Vector) -> Vector:
         if not isinstance(other, Vector):
